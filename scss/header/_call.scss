@@ -1,0 +1,55 @@
+.call {
+  order: 2;
+  text-align: right;
+  
+  &__number {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: $white-color;
+  }
+
+  &__text {
+    font-size: 10px;
+    line-height: 14px;
+    color: $white-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .call {
+    margin: 0 0 0 auto;
+    order: 0;
+
+    &__number {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .call {
+
+    &__number {
+      font-size: 24px;
+      line-height: 30px;
+      transition: .2s;
+
+      &:hover,
+      &:focus {
+        color: $lightblue-color;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

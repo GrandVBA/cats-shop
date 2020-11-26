@@ -1,0 +1,50 @@
+.header {
+  background: linear-gradient(90deg, #15100d 50%, #2c241d 50%);
+  
+  &__bcg {
+    background: url("../img/header-bcg.png") no-repeat center;
+  }
+
+  &__opacity {
+    background-color: rgba(31, 32, 33, 0.79);
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+
+    font-size: 24px;
+    line-height: 28px;
+    color: $white-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+  
+    &__top {
+      justify-content: flex-start;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+
+    &__title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+}

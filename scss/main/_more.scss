@@ -1,0 +1,55 @@
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+
+  &__btn {
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 380px;
+    height: 55px;
+
+    color: $black-color;
+    font-size: 12px;
+    line-height: 15px;
+
+    border: 1px solid #CACACA;
+    background: $white-color;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .more {
+    height: 160px;
+  
+    &__btn {
+      width: 33%;
+      height: 65px;
+  
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more {
+    height: 216px;
+
+    &__btn {
+      transition: .2s;
+      &:hover {
+        background: $lightblue-color;
+        color: $white-color;
+        border: none;
+      }
+      &:active {
+        transform: scale(.95);
+      }
+    }
+  }
+}

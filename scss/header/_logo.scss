@@ -1,0 +1,9 @@
+.logo {
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    order: 0;
+  }
+}

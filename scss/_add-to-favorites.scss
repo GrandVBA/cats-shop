@@ -1,0 +1,31 @@
+.add-to-favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 0 0 -100%;
+  position: fixed;
+
+  top: 10px;
+  left: 10px;
+
+  width: 200px;
+  height: 60px;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: $white-color;
+
+  background: $lightblue-color;
+  border-radius: 5px;
+}
+
+.show-notification {
+  animation: show-notification 2s alternate infinite;
+}
+
+@keyframes show-notification {
+  0% {margin: 0 0 0 -100%;}
+  20% {margin: 0 0 0 0;}
+  100% {margin: 0 0 0 0;}
+}

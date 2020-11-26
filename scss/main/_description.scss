@@ -1,0 +1,41 @@
+.description {
+  padding: 0 0 0 15px;
+  border-left: 4px solid $lightblue-color;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $black-color;
+  }
+
+  &__text {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  &__value {
+    display: block;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+
+    &__text {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__value {
+  
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.cats {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cats {
+    margin: -1% -4px;
+
+    &__list {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cats {
+    margin: -2% -4px;
+  }
+}

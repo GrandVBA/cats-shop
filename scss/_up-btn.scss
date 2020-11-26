@@ -1,0 +1,36 @@
+.up-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+
+  bottom: 40px;
+  right: 40px;
+
+  width: 49px;
+  height: 49px;
+
+  border: none;
+  background: $lightblue-color;
+  transition: .2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(.9);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .up-btn {
+    width: 59px;
+    height: 59px;
+  }
+}
+
+.up-btn-show {
+  display: flex;
+}
