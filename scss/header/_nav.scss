@@ -1,7 +1,17 @@
 .nav {
-  order: 3;
+  display: none;
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 0 -100% 0 0;
+
+  &__wrp {
+    display: flex;
+    flex-direction: row-reverse;
+    order: 3;
+    width: 100%;
+    margin: 20px 0 0 0;
+
+    overflow: hidden;
+  }
 
   &__list {
     display: flex;
@@ -17,15 +27,42 @@
 
     &--current {
       font-weight: 700;
+      pointer-events: none;
     }
   }
 }
 
+.show-menu {
+  display: block;
+  animation: show-menu 1s .3s forwards;
+
+}
+
+.close-menu {
+  display: block;
+  animation: close-menu 1s forwards;
+}
+
+@keyframes show-menu {
+  0% {margin: 0 -100% 0 0}
+  100% {margin: 0}
+}
+
+@keyframes close-menu {
+  0% {margin: 0}
+  100% {margin: 0 -100% 0 0}
+}
+
 @media (min-width: $tablet-width) {
   .nav {
-    margin: 0 0 0 60px;
-    order: 0;
-    width: 300px;
+    display: block;
+    margin: 0;
+
+    &__wrp {
+      margin: 0 0 0 60px;
+      order: 0;
+      width: 300px;
+    }
 
     &__link {
       font-size: 16px;
@@ -36,8 +73,12 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    margin: 0 0 0 120px;
-    width: 360px;
+    
+    &__wrp {
+      margin: 0 0 0 120px;
+      order: 0;
+      width: 360px;
+    }
 
     &__link {
       font-size: 18px;

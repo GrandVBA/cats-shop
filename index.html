@@ -16,36 +16,45 @@
           <div class="header__top">
     
             <div class="header__logo logo">
-              <svg width="78" height="52" viewBox="0 0 78 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="78" height="52" viewBox="0 0 78 52" fill="none">
                 <path d="M63.0559 15.8815L54.2119 15.8947L27.8012 40.7922H10.0354V23.4593L34.2348 0.848633L17.993 0.899213L0 17.6625V51.1511H34.0283L63.0418 23.5687L63.0559 15.8815Z" fill="white"/>
                 <path d="M43.9721 0.848633L14.9586 28.4318L14.9453 36.1182L23.7884 36.1049L50.1991 11.2075H67.9649V28.5404L43.7656 51.1511L60.0074 51.1013L78.0004 34.338V0.848633H43.9721Z" fill="white"/>
               </svg> 
             </div>
-    
-            <nav class="header__nav nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Main
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link nav__link--current">
-                    Gallery
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    News
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Profile
-                  </a>
-                </li>
-              </ul>
-            </nav>
+
+            <div class="nav__wrp">
+              <nav class="header__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      Main
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--current">
+                      Gallery
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      News
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      Profile
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+  
+              <button class="header__toggle toggle">
+                <svg class="toggle__svg" data-name="Livello 1" viewBox="0 0 128 128" width="18px" height="18px">
+                  <path d="M64,0a64,64,0,1,0,64,64A64.07,64.07,0,0,0,64,0Zm0,122a58,58,0,1,1,58-58A58.07,58.07,0,0,1,64,122Z" fill="white"/>
+                  <path d="M74.12,35.88a3,3,0,0,0-4.24,0l-26,26a3,3,0,0,0,0,4.24l26,26a3,3,0,0,0,4.24-4.24L50.24,64,74.12,40.12A3,3,0,0,0,74.12,35.88Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
     
             <div class="header__call call">
               <a href="tel:+544349000000" class="call__number">
@@ -504,10 +513,18 @@
     </svg>
   </button>
 
-  <div class="add-to-favorites">
-    Добавлено в избранное
-  </div>
+  <template id="notification">
+    <div class="add-to-favorites">
+      Добавлено в избранное
+    </div>
+  </template>
 
-  <script src="js/script.js"></script>
+  <script src="js/menu-mobile.js"></script>
+  <script src="js/sorting.js"></script>
+  <script src="js/notification.js"></script>
+  <script src="js/validate-email.js"></script>
+  <script src="js/scroll-up.js"></script>
+  <script src="js/debounce.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

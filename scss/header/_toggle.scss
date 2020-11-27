@@ -1,0 +1,17 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 0 auto;
+  background: none;
+  border: none;
+
+  height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .toggle {
+    display: none;
+  }
+}

@@ -22,8 +22,7 @@
 
     transition: .2s;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $lightblue-color;
 
       .sorting__svg {

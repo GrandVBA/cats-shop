@@ -54,8 +54,7 @@
     background: none;
     border: none;
 
-    &:hover > .cat__like-svg,
-    &:focus > .cat__like-svg {
+    &:hover > .cat__like-svg {
       path {
         opacity: 1;
       }
@@ -124,16 +123,12 @@
 
 .sold {
   background: $dark-color;
-  cursor: auto;
+  pointer-events: none;
 }
 
 .active-like {
-  .cat__like-svg {
-    path {
-      opacity: 1;
-      fill: $red-color;
-    }
-  }
+  fill: $red-color;
+  opacity: 1 !important;
 }
 
 @media (min-width: $tablet-width) {
