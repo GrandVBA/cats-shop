@@ -1,4 +1,4 @@
-'use strict';
+`use strict`;
 
 (function () {
   const sortAgeBtn = document.querySelector(`.sorting__link--age`);
@@ -16,7 +16,7 @@
 
     getValueInArray: function (elements, array) {
       for (let i = 0; i < elements.length; i++) {
-        let val = elements[i].textContent.replace(/\s/g, '');
+        let val = elements[i].textContent.replace(/\s/g, ``);
         
         array.push(Number(val));
       }
@@ -77,9 +77,9 @@
       svg.classList.toggle(`toggle-sort`);
   
       if (svg.classList.contains(`toggle-sort`)) {
-        window.sorting.getSortedList('data-age', arr, window.sorting.getSmallToLargArr);
+        window.sorting.getSortedList(`data-age`, arr, window.sorting.getSmallToLargArr);
       } else {
-        window.sorting.getSortedList('data-age', arr, window.sorting.getLargToSmallArr);
+        window.sorting.getSortedList(`data-age`, arr, window.sorting.getLargToSmallArr);
       }
     }
   };

@@ -1,6 +1,6 @@
 {
   "name": "cats",
-  "description": "доделать",
+  "description": "Small demo project",
   "repository": {
     "type": "git",
     "url": "git@github.com:GrandVBA/cats-shop.git"

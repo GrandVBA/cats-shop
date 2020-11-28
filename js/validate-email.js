@@ -11,7 +11,7 @@
     if (re.test(email)) {
       emailInput.setCustomValidity(``);
     } else {
-      emailInput.setCustomValidity('Пример - shop@cats.ru');
+      emailInput.setCustomValidity(`Пример - shop@cats.ru`);
     }
     emailInput.reportValidity();
   };

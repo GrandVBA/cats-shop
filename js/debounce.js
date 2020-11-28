@@ -1,4 +1,4 @@
-'use strict';
+`use strict`;
 
 (function () {
   const DEBOUNCE_INTERVAL = 300; // ms

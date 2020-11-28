@@ -1,7 +1,7 @@
-'use strict';
+`use strict`;
 
 (function () {
-  const upBtn = document.querySelector('.up-btn');
+  const upBtn = document.querySelector(`.up-btn`);
 
   window.scrollUp = {
     showBtnHandler: function () {
@@ -9,10 +9,10 @@
       const coords = document.documentElement.clientHeight / 2;
   
       if (scrolled > coords) {
-        upBtn.classList.add('up-btn-show');
+        upBtn.classList.add(`up-btn-show`);
       }
       if (scrolled < coords) {
-        upBtn.classList.remove('up-btn-show');
+        upBtn.classList.remove(`up-btn-show`);
       }
     },
 
@@ -24,11 +24,11 @@
     }
   }
 
-  window.addEventListener('scroll', function () {
+  window.addEventListener(`scroll`, function () {
     window.scrollUp.showBtnHandler();
   });
   
-  upBtn.addEventListener('click', function () {
+  upBtn.addEventListener(`click`, function () {
     window.scrollUp.upHandler();
   });
 })();

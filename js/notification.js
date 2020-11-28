@@ -1,4 +1,4 @@
-'use strict';
+`use strict`;
 
 (function () {
   const catsList = document.querySelector(`.cats__list`);
